@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  get "home/index"=>"home#index"
-  get "home/timeabout"=>"home#timeabout"
-  get "home/help" => "home#help"
+  root "home#index"
+  get "index"=>"home#index"
+  get "timeabout"=>"home#timeabout"
+  get "help" => "home#help"
 end
